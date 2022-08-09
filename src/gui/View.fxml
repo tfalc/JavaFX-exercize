@@ -2,12 +2,23 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
-   <children>
-      <Button layoutX="174.0" layoutY="288.0" mnemonicParsing="false" text="Button" />
-      <Label layoutX="174.0" layoutY="264.0" text="Click here" />
-   </children>
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+	<children>
+		<Button fx:id="btTest" layoutX="147.0" layoutY="45.0" mnemonicParsing="false" onAction="#onBtTestAction" text="Botão de pânico!" />
+		<Label layoutX="165.0" layoutY="28.0" text="Não clique!!!!" />
+      <Label layoutX="34.0" layoutY="101.0" text="Cálculo de soma">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="34.0" layoutY="128.0" prefHeight="25.0" prefWidth="170.0" promptText="Digite o primeiro número" />
+      <TextField layoutX="34.0" layoutY="175.0" prefHeight="25.0" prefWidth="170.0" promptText="Digite o segundo número" />
+      <Button layoutX="34.0" layoutY="216.0" mnemonicParsing="false" text="Calcular Soma" />
+      <Label layoutX="34.0" layoutY="253.0" text="Resultado = " />
+      <Label layoutX="105.0" layoutY="253.0" />
+	</children>
 </AnchorPane>
