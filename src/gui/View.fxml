@@ -15,10 +15,10 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="34.0" layoutY="128.0" prefHeight="25.0" prefWidth="170.0" promptText="Digite o primeiro número" />
-      <TextField layoutX="34.0" layoutY="175.0" prefHeight="25.0" prefWidth="170.0" promptText="Digite o segundo número" />
-      <Button layoutX="34.0" layoutY="216.0" mnemonicParsing="false" text="Calcular Soma" />
+      <TextField fx:id="txtNumber1" layoutX="34.0" layoutY="128.0" prefHeight="25.0" prefWidth="170.0" promptText="Digite o primeiro número" />
+      <TextField fx:id="txtNumber2" layoutX="34.0" layoutY="175.0" prefHeight="25.0" prefWidth="170.0" promptText="Digite o segundo número" />
+      <Button fx:id="btSoma" layoutX="34.0" layoutY="216.0" mnemonicParsing="false" onAction="#onBtSomaAction" text="Calcular Soma" />
       <Label layoutX="34.0" layoutY="253.0" text="Resultado = " />
-      <Label layoutX="105.0" layoutY="253.0" />
+      <Label fx:id="labelResult" layoutX="105.0" layoutY="253.0" />
 	</children>
 </AnchorPane>
